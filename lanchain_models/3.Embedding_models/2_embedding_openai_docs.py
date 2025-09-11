@@ -1,7 +1,7 @@
 from langchain_openai import OpenAIEmbeddings
-import os 
+from dotenv import load_dotenv
 
-os.environ["OPENAI_API_KEY"] = "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"
+load_dotenv()
 
 embedding = OpenAIEmbeddings(model='text-embedding-3-large', dimensions=32)
 
